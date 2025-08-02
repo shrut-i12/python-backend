@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route("/<int:n>")
 def even(n):
     primes=""
-    for i in range(1,n+1):
+    for i in range(2,n+1):
         for n in range(2,i):
           if(i%n==0):
              break
@@ -14,4 +14,5 @@ def even(n):
 if __name__ == "__main__":
     app.run()
         
+
         
